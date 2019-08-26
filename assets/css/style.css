@@ -1,0 +1,142 @@
+/* CSS for index.html, contact.css, portfolio.html */
+
+#profile-pic {
+    float:left;
+}
+
+body {
+    /* Visual */
+    color: #777777;
+    background: url('../images/sakura.png');
+
+    /* Typography */
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+
+}
+
+body, .logo {
+    /* Box Model */
+    margin: 0;
+}
+
+h1 {
+    /* Typography */
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: #4aaaa5;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-container {
+    /* Visual */
+    height: 60px;
+    width: 100%;
+
+    /* Box Model */
+    border-bottom: 2px solid #cccccc;
+
+    /* Positioning */
+    position: fixed;
+    top: 0;
+}
+
+.header {
+    /* Visual */
+    width: 960px;
+    height: 60px;
+
+    /* Box Model */
+    margin: 0 auto;
+}
+
+.logo {
+    /* Visual */
+    background: #4aaaa5;
+    height: 60px;
+    width: 300px;
+
+    /* Positioning */
+    float: left;
+}
+
+.logo, .footer {
+    /* Box Model */
+    text-align: center;
+}
+
+.logo h1 {
+    /* Typography */
+    color: #ffffff;
+
+    /* Box Model */
+    margin: 18px 0;
+}
+
+.header nav {
+    /* Positioning */
+    float: right;
+
+    /* Box Model */
+    margin: 21px 0;
+}
+
+.header nav a {
+    /* Typography */
+    text-decoration: none;
+    color: #777777;
+
+    /* Box Model */
+    margin: 8px;
+}
+
+.footer{
+    /* Visual */
+    background: #666666;
+    height: 60px;
+    width: 100%;
+
+    /* Box Model */
+    border-top: 8px solid #4aaaa5;
+
+    /* Typography */
+    color: #cccccc;
+
+    /* Positioning */
+    position: absolute;
+    bottom: 0;
+}
+
+.footer p {
+    /* Box Model */
+    margin-top: 35px;
+}
+
+.main-content {
+    /* Visual */
+    width: 918px;
+    overflow: auto;
+
+    /* Box Model */
+    border: 1px solid#dddddd;
+    margin: 90px auto;
+    padding: 20px;
+}
+
+.main-content p {
+    line-height: 30px;
+}
+
+.header-container, .main-content {
+    background: #ffffff;
+}
+
+hr {
+    /* Box Model */
+    margin: 25px 0;
+}
+
+#profile-pic {
+    height: 160px;
+    width: 240px;
+    margin-right: 20px;
+}

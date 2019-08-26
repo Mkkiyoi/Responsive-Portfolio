@@ -1,0 +1,31 @@
+/* CSS specifically for contact.html */
+
+form p {
+    /* Box Model */
+    margin: 5px 0;
+}
+
+input, #message {
+    /* Visual */
+    width: 908px;
+
+    /* Box Model */
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid#dddddd;
+}
+
+#message {
+    /* Visual */
+    height: 150px;
+}
+
+#submit {
+    /* Visual */
+    background: #4aaaa5;
+    width: 75px;
+    height: 30px;
+    
+    /* Typography */
+    color: #ffffff;
+}  
