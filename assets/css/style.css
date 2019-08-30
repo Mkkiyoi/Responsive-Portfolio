@@ -29,7 +29,6 @@ h1 {
 
 .header-container {
     /* Visual */
-    height: 60px;
     width: 100%;
 
     /* Box Model */
@@ -42,8 +41,8 @@ h1 {
 
 .header {
     /* Visual */
-    width: 960px;
-    height: 60px;
+    width: 100%;
+    max-width: 960px;
 
     /* Box Model */
     margin: 0 auto;
@@ -113,7 +112,8 @@ h1 {
 
 .main-content {
     /* Visual */
-    width: 918px;
+    width: 100%;
+    max-width: 918px;
     overflow: auto;
 
     /* Box Model */
@@ -123,10 +123,12 @@ h1 {
 }
 
 .main-content p {
+    /* Typography */
     line-height: 30px;
 }
 
 .header-container, .main-content {
+    /* Visual */
     background: #ffffff;
 }
 
@@ -136,7 +138,82 @@ hr {
 }
 
 #profile-pic {
+    /* Visual */
     height: 160px;
     width: 240px;
+
+    /* Box Model */
     margin-right: 20px;
+}
+
+@media screen and (max-width: 980px) {
+    .main-content{
+        /* Visual */
+        width: 60%;
+        margin: 90px auto 90px 21px;
+    }
+
+    .container, .header-container, .footer {
+        /* Visual */
+        width: 100%;
+    }
+
+    .header {
+        /* Visual */
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-content {
+        /* Visual */
+        width: 89%;
+        margin: 90px auto;
+    }
+    
+    .container, .header-container, .footer {
+        /* Visual */
+        width: 100%;
+    }
+
+    .header {
+        /* Visual */
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .header-container {
+        /* Positioning */
+        position: static;
+
+        /* Visual */
+        height: 120px;
+    }
+
+    .main-content {
+        /* Visual */
+        width: 90%;
+
+        /* Box Model */
+        margin: 10px auto;
+    }
+
+    .container, .header-container, .header, .footer {
+        /* Visual */
+        width: 100%;
+    }
+
+    .logo, nav {
+        /* Visual */
+        width: 100%;
+
+        /* Positioning */
+        clear: right;
+    }
+
+    nav {
+        /* Typography */
+        text-align: center;
+    }c
 }
