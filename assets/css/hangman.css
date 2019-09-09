@@ -24,3 +24,13 @@ img {
     /* Box Model */
     margin: 0 auto;
 }
+
+.div-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    z-index: 10;
+}
