@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character Set -->
+    <meta charset="UTF-8">
+
+    <!-- Set viewport scaling for responsive website -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Compatability for Microsoft Edge -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Title of the website displayed in the tab -->
+    <title>Word Guess Game</title>
+
+    <!-- Linking Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- Linking CSS Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/hangman.css">
+
+    <!-- Linking Javascript -->
+    <script src="assets/javascript/game.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Bootstrap container -->
+    <div class="container mt-3">
+
+        <!-- Header Row -->
+        <div class="row">
+        </div>
+
+        <!-- Game Content Row -->
+        <div class="row">
+
+            <!-- Column containing image displayed after game is finished -->
+            <div class="col-7 border">
+                <div class="mx-auto my-3" id="image"></div>
+            </div>
+
+            <!-- Column containing game -->
+            <div id="game-content" class="col-5 border pb-3">
+                <!-- Instructions -->
+                <p class="alert alert-info" role="alert">
+                    Press any key to get started!
+                </p>
+
+                <!-- Display wins in the span -->
+                <p class="alert alert-info" role="alert">
+                    Wins
+                </p>
+                <span id="wins"></span>
+
+                <!-- Display current word being guessed in the span -->
+                <p class="alert alert-info" role="alert">
+                    Current word
+                </p>
+                <span id="current-word"></span>
+
+                <!-- Display number of guesses left in the span -->
+                <p class="alert alert-info" role="alert">
+                    Number of Guesses Remaining
+                </p>
+                <span id="guesses-remaining"></span>
+
+                <!-- Display letters guessed in the span -->
+                <p class="alert alert-info" role="alert">
+                    Letters Already Guessed
+                </p>
+                <span id="letters-guessed"></span>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
