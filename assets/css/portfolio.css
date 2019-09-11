@@ -36,6 +36,23 @@
     bottom: 5px;
 }
 
+.portfolio-content div a {
+    /* Visual */
+    display: block;
+    color: #ffffff;
+
+    /* Typography */
+    text-decoration: none;    
+    text-align: center;
+
+    /* Box Model */
+    margin: 10px 0;
+
+    /* Positioning */
+    position: relative;
+    z-index: 10;
+}
+
 .portfolio-content div p {
 
     /* Box Model */
@@ -51,4 +68,6 @@
 #rpg-text, #widget-text {
     left: 205px;
 }
+
+
 
